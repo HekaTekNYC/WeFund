@@ -1,3 +1,12 @@
+export default {
+// other configurations
+build: {
+rollupOptions: {
+external: ['js/functions.bundle.js']
+}
+}
+}
+
 # Astro Starter Kit: Basics
 
 ```sh
@@ -52,3 +61,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+<!-- Parallax Script
+    ============================================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script>!SEMICOLON.Mobile.any() && skrollr.init({forceHeight: false});</script>
