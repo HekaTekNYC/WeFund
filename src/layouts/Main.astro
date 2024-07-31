@@ -1,0 +1,129 @@
+---
+import LoginModal from "../components/LoginModal.astro";
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en-US">
+
+<head>
+
+
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+	<meta name="author" content="Hekatek">
+
+	<meta name="description" content="Create Crowdfunding &amp; Donations Website">
+
+
+
+	<!-- Font Imports -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+	<!-- Core Style -->
+
+	<link rel="stylesheet" href="style.css">
+
+
+
+	<!-- Font Icons -->
+
+	<link rel="stylesheet" href="css/font-icons.css">
+
+
+
+	<!-- Plugins/Components CSS -->
+
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<link rel="stylesheet" href="include/rs-plugin/css/settings.css" media="screen">
+
+	<link rel="stylesheet" href="include/rs-plugin/css/layers.css">
+
+	<link rel="stylesheet" href="include/rs-plugin/css/navigation.css">
+
+
+
+
+
+	<link rel="stylesheet" href="page/crowdfunding/crowdfunding.css">
+
+
+
+	<!-- Custom CSS -->
+
+	<link rel="stylesheet" href="css/custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+	<title>{title}</title>
+
+</head>
+<body class="stretched">
+	<div id="wrapper">
+	<LoginModal />
+    <main>
+      <Header/>
+    
+
+      <div class="content-wrapper">
+        <slot />
+      </div>
+      <Footer />
+    </main>
+</div>
+	<!-- Go To Top
+
+	============================================= -->
+
+	<div id="gotoTop" class="bi-arrow-up"></div>
+
+
+
+	<!-- JavaScripts
+
+	============================================= -->
+
+	<script src="/js/plugins.min.js" is:inline></script>
+
+	<script src="/js/functions.bundle.js" is:inline></script>
+
+
+
+
+	<!-- Parallax Script
+
+	============================================= -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" ></script>
+	<!-- <script src="js/semicolon.js"></script> -->
+
+	<!-- <script>!SEMICOLON.Mobile.any() && skrollr.init({forceHeight: false});</script> -->
+  </body>
+</html>
+
+<style>
+
+</style>
+
