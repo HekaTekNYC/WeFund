@@ -1,10 +1,12 @@
-<section id="slider" class="slider-element min-vh-100 include-header" style="background: url('/page/crowdfunding/images/hero.svg') no-repeat center bottom / cover;">
-    <div class="slider-inner">
+
+
+<section id="slider" class=" slider-element min-vh-100 include-header">
+    <div class="slider-inner ">
 
         <div class="vertical-middle">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-lg-6 col-md-8">
+                    <div class="col-lg-12 col-md-8">
                         <div class="slider-title">
                             <h1 class="fw-semibold">Best Crowdfunding Website for your Startup.</h1>
                             <p class="text-muted">Providing a platform where creators can share their ideas, gain backers, and make their projects a reality!</p>
@@ -22,3 +24,145 @@
 
     </div>
 </section>
+
+<style>
+#slider {
+    padding-top: 65px; 
+    overflow: hidden;
+}
+
+.slider-inner img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    left: 6px; 
+}
+.slider-title {
+    padding: 0;
+}
+.slider-title h1 {
+    font-size: 2rem; 
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width: 430px) {
+    .slider-inner img {
+        width: 380px !important;
+        margin: 80px 10px;
+    }
+
+    .vertical-middle {
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+    }
+
+    .container {
+        padding-top: 0; 
+        padding-bottom: 0; 
+    }
+
+
+    .slider-title h1 {
+        font-size: 1.75rem; 
+    }
+}
+
+ @media (min-width: 768px) { 
+    #slider .slider-inner  {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+        height: 900px !important;
+    }
+    .slider-inner {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    
+ 
+    }
+    .slider-inner img{
+        top: 200px;
+        left: 18%;
+        width: 500px  !important;
+        margin: 0;
+    }
+
+    .vertical-middle {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 100px;
+        left: 15%;
+
+    } 
+
+    .slider-title {
+        text-align: center;
+    }
+    .slider-btns {
+        text-align: center;
+    }
+
+    
+} 
+
+
+
+@media (min-width: 1024px) {
+    #slider {
+        min-height: 700px !important;
+        background: none;
+    }
+  #slider .slider-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    height: auto !important;
+    background: none;
+    padding: 60px 40px;
+  }
+   
+  .slider-inner img {
+    width: 45% !important;
+    max-width: 500px !important;
+    margin: 0 !important;
+    position: static !important;
+    transform: none;
+  }
+
+  .slider-inner .row {
+    width: 100%;
+  }
+
+
+  .vertical-middle {
+    position: static !important;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0;
+  }
+
+  .slider-title {
+    text-align: left;
+  }
+
+  .slider-btns {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+    
+    #slider .slider-inner {
+        padding: 60px 160px;
+    }
+}
+
+ </style> 
